@@ -7,7 +7,7 @@ const usersMidiaSocial = {
 
 }
 
-function redirectUserForLink(){
+function changeSocialMediaLinks(){
   for(let li of socialLinks.children){
     const social = li.getAttribute('class')
 
@@ -18,4 +18,4 @@ function redirectUserForLink(){
 
 }
 
-redirectUserForLink()
+changeSocialMediaLinks()
