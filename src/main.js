@@ -19,3 +19,18 @@ function changeSocialMediaLinks(){
 }
 
 changeSocialMediaLinks()
+
+function getGitHubProfileInfos(){
+    const url = `https://api.github.com/users/${usersMidiaSocial.github}`
+
+    fetch(url)
+    .then( response => response.json())
+    .then( data => {
+      userName.textContent = data.name;
+      userBio.textContent = data.bio;
+      userImage.href = data.avatar_url;
+      userLogin.src = data.html_url;
+    })
+  }
+
+  getGitHubProfileInfos()
