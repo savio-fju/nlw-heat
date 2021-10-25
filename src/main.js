@@ -12,7 +12,7 @@ function changeSocialMediaLinks(){
     const social = li.getAttribute('class')
 
     li.children[0].href = `https://${social}.com/${usersMidiaSocial[social]}`
-    alert(li.children[0].href)
+    //alert(li.children[0].href)
   
   }
 
